@@ -5,12 +5,13 @@ Linux only, nostd, in about 2000 loc.
 ## Showcase
 
 ![](./demo.gif)
+*Shit quality because GIF*
 
 ## Controls
 
  - <kbd>←</kbd> move piece once to the left
  - <kbd>→</kbd> move piece once to the right
- - <kbd>↓</kbd> toggle soft drop (can't be hold because terminals don't support release events)
+ - <kbd>↓</kbd> toggle soft drop (can't be held because terminals don't support release events)
  - <kbd>X</kbd> rotate piece
  - <kbd>ESC</kbd> pause game
 
@@ -36,4 +37,8 @@ Built binary will be called `xttrs`. The code doesn't link against any library s
 
 ## Persistence
 
-The best score per user is stored in `XDG_DATA_HOME/xttrs/best_score` (defaults to `HOME/.local/share/xttrs/best_score`).
+The best score per user is stored in `$XDG_DATA_HOME/xttrs/best_score` (defaults to `$HOME/.local/share/xttrs/best_score`).
+
+## Internals
+
+The whole codebase is a huge mess with no conventions, probably a lot of stupid things, I'm still learning.
